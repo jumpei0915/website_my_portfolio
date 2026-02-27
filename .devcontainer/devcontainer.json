@@ -1,0 +1,30 @@
+{
+  "name": "insight-finder",
+
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+
+  "workspaceFolder": "/app",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+
+  "mounts": [
+    "source=vscode-server,target=/root/.vscode-server,type=volume"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker",
+        "openai.chatgpt",
+        "mechatroner.rainbow-csv"
+      ],
+      "settings": {
+        "python.terminal.activateEnvironment": false
+      }
+    }
+  }
+}
