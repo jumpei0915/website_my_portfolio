@@ -1,0 +1,12 @@
+personality = "pragmatic"
+
+############################################
+# 🤖 Core behavior
+############################################
+
+approval_policy = "never"
+
+sandbox_mode = "danger-full-access"
+
+[projects."/home/vscode/Github"]
+trust_level = "restrict"

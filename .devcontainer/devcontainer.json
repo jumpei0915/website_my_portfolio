@@ -1,5 +1,5 @@
 {
-  "name": "insight-finder",
+  "name": "project_name",
 
   "build": {
     "dockerfile": "../Dockerfile"
@@ -7,10 +7,14 @@
 
   "workspaceFolder": "/app",
   "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+  "containerEnv": {
+    "GCP_ACCESS_TOKEN": "${localEnv:GCP_ACCESS_TOKEN}"
+  },
 
-  "mounts": [
-    "source=vscode-server,target=/root/.vscode-server,type=volume"
-  ],
+
+"mounts": [
+  "source=vscode-server,target=/root/.vscode-server,type=volume"
+],
 
   "customizations": {
     "vscode": {
@@ -23,8 +27,11 @@
         "mechatroner.rainbow-csv"
       ],
       "settings": {
-        "python.terminal.activateEnvironment": false
-      }
+        "python.terminal.activateEnvironment": false,
+        "github.copilot.enable": {
+          "*": false
+        }
     }
   }
+}
 }
