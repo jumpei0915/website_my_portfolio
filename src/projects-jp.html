@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Jumpei Kato</title>
+  <meta name="description" content="Jumpei Katoによるピープルアナリティクス、HRデータサイエンスの主要プロジェクト。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <nav class="nav nav-left">
+        <a href="./index-jp.html">Home</a>
+        <a href="./resume-jp.html">Resume</a>
+        <a href="./projects-jp.html" aria-current="page">Projects</a>
+      </nav>
+
+      <a class="brand" href="./index-jp.html">Jumpei Kato</a>
+
+      <div class="header-links">
+        <div class="lang-toggle" aria-label="Language switcher">
+          <a href="./projects.html">EN</a>
+          <span>/</span>
+          <a href="./projects-jp.html" aria-current="page">JP</a>
+        </div>
+        <a href="mailto:k.jumpei0915@gmail.com">Email</a>
+        <a href="./assets/resume/Resume%20Jumpei%20Kato%202025-10-28.pdf" target="_blank">PDF</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    </div>
+
+    <nav class="nav nav-mobile" id="site-nav">
+      <a href="./index-jp.html">Home</a>
+      <a href="./resume-jp.html">Resume</a>
+      <a href="./projects-jp.html" aria-current="page">Projects</a>
+      <a href="./projects.html">EN</a>
+      <a href="mailto:k.jumpei0915@gmail.com">Email</a>
+      <a href="./assets/resume/Resume%20Jumpei%20Kato%202025-10-28.pdf" target="_blank">PDF</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">Projects</p>
+      <h1>ピープルアナリティクスとHRデータサイエンスの主要プロジェクト。</h1>
+      <p class="intro-copy">
+        人員予測、離職分析、ダッシュボード自動化、ラーニングアナリティクスに関する取り組みを紹介します。
+      </p>
+    </section>
+
+    <section class="stacked-cards">
+      <article class="detail-card" id="headcount-simulation-framework">
+        <h2>人員シミュレーション基盤</h2>
+        <p>離職や異動シナリオを踏まえて、将来の人員数と人件費を予測するための確率的・確率過程ベースのモデルを構築。</p>
+        <p><strong>Tech:</strong> Python、統計モデリング、ワークフォースデータ</p>
+        <p><strong>Impact:</strong> 戦略的人員計画と人件費予測を支援。</p>
+      </article>
+
+      <article class="detail-card" id="attrition-driver-analysis">
+        <h2>離職要因分析</h2>
+        <p>Explainable Boosting Machines、ロジスティック回帰、ベイズ手法を用いて、解釈性の高い離職分析モデルを構築。</p>
+        <p><strong>Tech:</strong> Python、EBM、ロジスティック回帰、ベイズ推論、特徴量設計</p>
+        <p><strong>Impact:</strong> 実務で活用しやすい離職要因の特定を支援。</p>
+      </article>
+
+      <article class="detail-card" id="hr-data-automation-and-dashboards">
+        <h2>HRデータ自動化とダッシュボード</h2>
+        <p>定常的なHRレポーティングを安定化するために、データ処理と可視化のワークフローを自動化。</p>
+        <p><strong>Tech:</strong> Python、Power BI、HRデータセット</p>
+        <p><strong>Impact:</strong> 定期レポートの品質と共有しやすさを改善。</p>
+      </article>
+
+      <article class="detail-card" id="learning-analytics">
+        <h2>ラーニングアナリティクス</h2>
+        <p>29,000件超の学習登録データと事後サーベイを分析し、学習施策の効果と需要を把握。</p>
+        <p><strong>Tech:</strong> データ分析、サーベイ分析、学習データ</p>
+        <p><strong>Impact:</strong> 学習ニーズ分析とコンテンツ評価を支援。</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jumpei Kato</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

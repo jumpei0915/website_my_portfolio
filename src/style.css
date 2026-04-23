@@ -97,6 +97,7 @@ a {
 
 .nav a,
 .header-links a,
+.lang-toggle,
 .eyebrow,
 .site-footer,
 .muted-line {
@@ -106,6 +107,22 @@ a {
 .nav a,
 .header-links a {
   font-size: 0.8rem;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+}
+
+.lang-toggle span {
+  color: var(--muted);
+}
+
+.lang-toggle a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
 }
 
 .nav a[aria-current="page"] {

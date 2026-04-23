@@ -111,6 +111,13 @@
 
 ## 2026-04-23
 
+### Add English And Japanese Pages With Header Toggle
+
+- Issue/task: Create separate English and Japanese pages and add a language toggle at the right end of the header.
+- Action taken: Added `src/index-jp.html`, `src/projects-jp.html`, and `src/resume-jp.html`; updated the existing English pages to include a right-side `EN / JP` language toggle in the header; and added shared toggle styling in `src/style.css`.
+- Files changed: `src/index.html`, `src/projects.html`, `src/resume.html`, `src/index-jp.html`, `src/projects-jp.html`, `src/resume-jp.html`, `src/style.css`, `docs/action_log.md`
+- Status: Completed.
+
 ### Move Hero Image Left And Content Right
 
 - Issue/task: Adjust the homepage hero so the portrait sits on the left and the title, copy, and links sit on the right.
