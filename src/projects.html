@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Jumpei Kato</title>
+  <meta name="description" content="Selected people analytics and HR data science projects by Jumpei Kato.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <nav class="nav nav-left">
+        <a href="./index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./projects.html" aria-current="page">Projects</a>
+      </nav>
+
+      <a class="brand" href="./index.html">Jumpei Kato</a>
+
+      <div class="header-links">
+        <a href="mailto:k.jumpei0915@gmail.com">Email</a>
+        <a href="./assets/resume/Resume%20Jumpei%20Kato%202025-10-28.pdf" target="_blank">PDF</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    </div>
+
+    <nav class="nav nav-mobile" id="site-nav">
+      <a href="./index.html">Home</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./projects.html" aria-current="page">Projects</a>
+      <a href="mailto:k.jumpei0915@gmail.com">Email</a>
+      <a href="./assets/resume/Resume%20Jumpei%20Kato%202025-10-28.pdf" target="_blank">PDF</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">Projects</p>
+      <h1>Selected people analytics and HR data science work.</h1>
+      <p class="intro-copy">
+        These projects focus on workforce forecasting, attrition modeling, dashboard automation,
+        and learning analytics for stakeholder decision-making.
+      </p>
+    </section>
+
+    <section class="stacked-cards">
+      <article class="detail-card" id="headcount-simulation-framework">
+        <h2>Headcount Simulation Framework</h2>
+        <p>Built a probabilistic and stochastic modeling framework to forecast workforce size and labor cost under attrition and transfer scenarios.</p>
+        <p><strong>Tech:</strong> Python, statistical modeling, workforce data</p>
+        <p><strong>Impact:</strong> Supports strategic workforce planning and labor cost forecasting.</p>
+      </article>
+
+      <article class="detail-card" id="attrition-driver-analysis">
+        <h2>Attrition Driver Analysis</h2>
+        <p>Built attrition analysis models using Explainable Boosting Machines, logistic regression, and Bayesian approaches to surface actionable retention signals.</p>
+        <p><strong>Tech:</strong> Python, EBM, logistic regression, Bayesian inference, feature engineering</p>
+        <p><strong>Impact:</strong> Helps identify causal and interpretable retention factors for targeted action.</p>
+      </article>
+
+      <article class="detail-card" id="hr-data-automation-and-dashboards">
+        <h2>HR Data Automation And Dashboards</h2>
+        <p>Built automated HR data processing and reporting workflows with dashboards for more reliable recurring workforce reporting.</p>
+        <p><strong>Tech:</strong> Python, Power BI, HR datasets</p>
+        <p><strong>Impact:</strong> Improved regular HR reporting and made workforce insights easier to share with stakeholders.</p>
+      </article>
+
+      <article class="detail-card" id="learning-analytics">
+        <h2>Learning Analytics</h2>
+        <p>Analyzed more than 29,000 registrations and learning activities, plus post-survey impact analysis for learning teams.</p>
+        <p><strong>Tech:</strong> Data analysis, survey analysis, learning data</p>
+        <p><strong>Impact:</strong> Supported learning needs analysis and evaluation of learning content impact.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jumpei Kato</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

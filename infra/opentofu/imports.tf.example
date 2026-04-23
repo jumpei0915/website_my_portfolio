@@ -1,0 +1,54 @@
+# Copy the Cloudflare blocks you need into imports.tf, replace the placeholder IDs, then run:
+# tofu plan
+# tofu apply
+#
+# Import blocks need literal IDs. Remove blocks that do not apply to your domain shape.
+
+# Use this when pages_custom_domain is a subdomain, for example blog.example.com.
+# Cloudflare DNS record import ID format: <zone_id>/<dns_record_id>
+import {
+  to = cloudflare_dns_record.pages_subdomain[0]
+  id = "<zone_id>/<dns_record_id_for_blog.example.com_cname>"
+}
+
+# Use these when pages_custom_domain is the apex domain, for example example.com.
+# Keep only the records that already exist in Cloudflare.
+import {
+  to = cloudflare_dns_record.pages_apex_a["185.199.108.153"]
+  id = "<zone_id>/<dns_record_id_for_185.199.108.153>"
+}
+
+import {
+  to = cloudflare_dns_record.pages_apex_a["185.199.109.153"]
+  id = "<zone_id>/<dns_record_id_for_185.199.109.153>"
+}
+
+import {
+  to = cloudflare_dns_record.pages_apex_a["185.199.110.153"]
+  id = "<zone_id>/<dns_record_id_for_185.199.110.153>"
+}
+
+import {
+  to = cloudflare_dns_record.pages_apex_a["185.199.111.153"]
+  id = "<zone_id>/<dns_record_id_for_185.199.111.153>"
+}
+
+import {
+  to = cloudflare_dns_record.pages_apex_aaaa["2606:50c0:8000::153"]
+  id = "<zone_id>/<dns_record_id_for_2606:50c0:8000::153>"
+}
+
+import {
+  to = cloudflare_dns_record.pages_apex_aaaa["2606:50c0:8001::153"]
+  id = "<zone_id>/<dns_record_id_for_2606:50c0:8001::153>"
+}
+
+import {
+  to = cloudflare_dns_record.pages_apex_aaaa["2606:50c0:8002::153"]
+  id = "<zone_id>/<dns_record_id_for_2606:50c0:8002::153>"
+}
+
+import {
+  to = cloudflare_dns_record.pages_apex_aaaa["2606:50c0:8003::153"]
+  id = "<zone_id>/<dns_record_id_for_2606:50c0:8003::153>"
+}

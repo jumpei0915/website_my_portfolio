@@ -1,0 +1,9 @@
+github_owner                  = "jumpei0915"
+github_repository             = "website_my_portfolio"
+github_repository_visibility  = "public"
+repository_description        = "Portfolio and blog site for Jumpei Kato."
+cloudflare_zone_name          = "example.com"
+pages_custom_domain           = "blog.example.com"
+
+# Optional. Set this if you already know the Cloudflare zone ID and want to skip zone lookup.
+# cloudflare_zone_id = "00000000000000000000000000000000"
