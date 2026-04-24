@@ -10,7 +10,9 @@
 
 ## WIP
 
-- Replace placeholder copy with your actual portfolio content.
+- Resstructure the webpage content
+- Check the page url
+- Replace pics with better one
 
 ## Mid term to Do
 

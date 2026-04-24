@@ -1,3 +1,19 @@
+## 2026-04-24
+
+### Remove Remaining Email And PDF Labels
+
+- Issue/task: The user still saw visible `Email` and `PDF` labels after the header label update and wanted the UI text aligned with the requested navigation wording.
+- Action taken: Changed the homepage CTA label from `Email` to `Contact` on the English and Japanese home pages, and changed the resume-page CTA label from `Open PDF Resume` to `Open Resume` on the English and Japanese resume pages.
+- Files changed: `src/index.html`, `src/index-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed; no remaining visible `Email` or `PDF` labels were found in `src/*.html`.
+
+### Update Header Navigation Labels
+
+- Issue/task: Change the site header structure so the left side shows `Home`, `Analytics Project`, and `Other Project`, while the right side shows `EN/JP`, `Resume`, and `Contact`.
+- Action taken: Updated the shared header markup across the English and Japanese home, projects, and resume pages; replaced the previous right-side `Email` and `PDF` links with `Resume` and `Contact`; and kept the new project labels mapped to the existing projects pages for now.
+- Files changed: `src/index.html`, `src/index-jp.html`, `src/projects.html`, `src/projects-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed; `Analytics Project` and `Other Project` currently point to the existing projects pages until separate destinations are defined.
+
 ## 2026-04-22
 
 ### Fix GitHub Pages Token Scope

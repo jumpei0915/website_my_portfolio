@@ -13,12 +13,11 @@
   - `This site should help a broad audience quickly understand who I am, what I build, and why my work is worth following or contacting me about.`
 
 ### 2. Recommended Web Page Sections
-- About Me
-- Academic History
-- Work History
-- Projects
-- Tech Stack
-- Contact
+- Home 
+  - Analtycis Project
+  - Other Project
+  - Resume
+  - Contact
 
 ### 3. UI Template
 - Current template files:
