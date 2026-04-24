@@ -98,6 +98,7 @@ a {
 .nav a,
 .header-links a,
 .lang-toggle,
+.social-links,
 .eyebrow,
 .site-footer,
 .muted-line {
@@ -123,6 +124,38 @@ a {
 .lang-toggle a[aria-current="page"] {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
+}
+
+.social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.icon-link:hover {
+  background: var(--accent-soft);
+  border-color: rgba(20, 92, 83, 0.22);
+}
+
+.icon-link svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .nav a[aria-current="page"] {

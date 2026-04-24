@@ -92,5 +92,5 @@ I am especially interested in workforce planning, attrition analysis, causal inf
 ## Contact
 
 - Name: Jumpei Kato
-- Email: `k.jumpei0915@gmail.com`
+- Email: `work@jumpeikato.com`
 - Message: If you are interested in people analytics, data science, HR technology, or collaboration, feel free to reach out.

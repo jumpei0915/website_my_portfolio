@@ -1,7 +1,7 @@
 # Jumpei Kato
 
 Tokyo, Japan  
-`k.jumpei0915@gmail.com`
+`work@jumpeikato.com`
 
 ## Summary
 

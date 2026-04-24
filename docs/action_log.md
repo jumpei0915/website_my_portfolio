@@ -1,5 +1,47 @@
 ## 2026-04-24
 
+### Standardize Contact Email
+
+- Issue/task: Replace the old Gmail address with `work@jumpeikato.com` in the remaining content source documents.
+- Action taken: Updated `docs/resume.md` and `docs/actual_content.md` to use `work@jumpeikato.com`, matching the active site header and homepage CTA links.
+- Files changed: `docs/resume.md`, `docs/actual_content.md`, `docs/action_log.md`
+- Status: Completed; the old Gmail address no longer appears in `src/` or `docs/`.
+
+### Add Header Contact Icons
+
+- Issue/task: Replace the shared header `Contact` text link with icon links for `X`, `Email`, and `LinkedIn`, and use the provided contact values.
+- Action taken: Added self-made inline SVG icons and a centralized contact-link block in `src/header.js`, styled the icon links in `src/style.css`, and updated the homepage `Contact` CTA email links to `work@jumpeikato.com`.
+- Files changed: `src/header.js`, `src/style.css`, `src/index.html`, `src/index-jp.html`, `docs/action_log.md`
+- Status: Completed; the shared header now renders `X`, `Email`, and `LinkedIn` icon links instead of a `Contact` label.
+
+### Add Contact Values To WIP
+
+- Issue/task: Store the actual contact values in the workflow notes for the upcoming contact update.
+- Action taken: Added the provided `X`, `Email`, and `Linkedin` values under the `Edit contact` item in the `WIP` section of `docs/workflow.md`.
+- Files changed: `docs/workflow.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Add Contact Update To WIP
+
+- Issue/task: Update the workflow tracker with the next contact-related work items.
+- Action taken: Added `Edit contact` under the `WIP` section in `docs/workflow.md` with notes for storing contact links and replacing the header contact label with `X`, `Email`, and `Linkedin` icons.
+- Files changed: `docs/workflow.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Move Webpage Content Restructure To Done
+
+- Issue/task: Update the workflow tracker to mark the webpage content restructure item as completed.
+- Action taken: Moved `Resstructure the webpage content` from the `WIP` section to the `Done` section in `docs/workflow.md`.
+- Files changed: `docs/workflow.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Move Page URL Check To Done
+
+- Issue/task: Update the workflow tracker to mark the page URL check as completed.
+- Action taken: Moved `Check the page url` from the `WIP` section to the `Done` section in `docs/workflow.md`.
+- Files changed: `docs/workflow.md`, `docs/action_log.md`
+- Status: Completed.
+
 ### Centralize Shared Header Rendering
 
 - Issue/task: Remove duplicated header HTML across the English and Japanese pages and keep one simple shared header source.
