@@ -1,5 +1,19 @@
 ## 2026-04-24
 
+### Centralize Shared Header Rendering
+
+- Issue/task: Remove duplicated header HTML across the English and Japanese pages and keep one simple shared header source.
+- Action taken: Added `src/header.js` to render the header from `data-page` and `data-lang` values, replaced the hard-coded header blocks in all six HTML pages with a single `site-header` mount point, and updated `src/script.js` to target the injected mobile menu by `id`.
+- Files changed: `src/header.js`, `src/script.js`, `src/index.html`, `src/index-jp.html`, `src/projects.html`, `src/projects-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed; header navigation is now controlled from one shared file and the current nav structure remains `Home`, `Analytics Project`, `EN/JP`, `Resume`, and `Contact`.
+
+### Remove Other Project From Navigation
+
+- Issue/task: `Other Project` is not ready yet and should be removed from the current site navigation until a real destination exists.
+- Action taken: Removed `Other Project` from the desktop and mobile header navigation on all English and Japanese home, projects, and resume pages.
+- Files changed: `src/index.html`, `src/index-jp.html`, `src/projects.html`, `src/projects-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed; current header navigation now shows `Home`, `Analytics Project`, `EN/JP`, `Resume`, and `Contact`.
+
 ### Remove Remaining Email And PDF Labels
 
 - Issue/task: The user still saw visible `Email` and `PDF` labels after the header label update and wanted the UI text aligned with the requested navigation wording.

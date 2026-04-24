@@ -10,41 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body data-page="projects" data-lang="en">
   <div class="grain" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <div class="site-header-inner">
-      <nav class="nav nav-left">
-        <a href="./index.html">Home</a>
-        <a href="./projects.html" aria-current="page">Analytics Project</a>
-        <a href="./projects.html">Other Project</a>
-      </nav>
-
-      <a class="brand" href="./index.html">Jumpei Kato</a>
-
-      <div class="header-links">
-        <div class="lang-toggle" aria-label="Language switcher">
-          <a href="./projects.html" aria-current="page">EN</a>
-          <span>/</span>
-          <a href="./projects-jp.html">JP</a>
-        </div>
-        <a href="./resume.html">Resume</a>
-        <a href="mailto:k.jumpei0915@gmail.com">Contact</a>
-      </div>
-
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
-    </div>
-
-    <nav class="nav nav-mobile" id="site-nav">
-      <a href="./index.html">Home</a>
-      <a href="./projects.html" aria-current="page">Analytics Project</a>
-      <a href="./projects.html">Other Project</a>
-      <a href="./projects-jp.html">JP</a>
-      <a href="./resume.html">Resume</a>
-      <a href="mailto:k.jumpei0915@gmail.com">Contact</a>
-    </nav>
-  </header>
+  <div id="site-header"></div>
 
   <main class="page-main">
     <section class="page-intro">
@@ -91,6 +59,7 @@
     <p>© <span id="year"></span> Jumpei Kato</p>
   </footer>
 
+  <script src="./header.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>

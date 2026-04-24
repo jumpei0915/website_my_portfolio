@@ -1,5 +1,5 @@
 const navToggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav");
+const nav = document.getElementById("site-nav");
 const year = document.getElementById("year");
 
 if (year) {
