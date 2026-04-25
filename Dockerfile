@@ -14,13 +14,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && rm -rf /var/lib/apt/lists/*
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    UV_PROJECT_ENVIRONMENT=/opt/venv
 
 # Install uv
 RUN pip install --no-cache-dir uv
 
 # ---- deps layer (cache-friendly) ----
-COPY pyproject.toml uv.lock ./
+COPY pyproject.toml ./
 RUN uv sync --no-install-project
 
 # ---- app code ----

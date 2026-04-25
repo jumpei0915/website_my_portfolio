@@ -268,3 +268,21 @@
 - Action taken: Added a one-page template with sections (`Home`, `Projects`, `About`, `Contact`), responsive styling, and small JS for mobile nav and footer year.
 - Files changed: `src/index.html`, `src/style.css`, `src/script.js`, `docs/action_log.md`
 - Status: Completed and ready for content replacement.
+
+## 2026-04-25
+
+### Add Docker Compose Dev Runner
+
+- Issue/task: Convert the development container setup to Docker Compose for local test runs.
+- Action taken: Added `docker-compose.yml` that builds from the existing `Dockerfile`, mounts the repository at `/app`, keeps the container running for dev use, and exposes port `8000` for static-site testing.
+- Files changed: `docker-compose.yml`, `docs/action_log.md`
+- Status: Completed; `docker compose config` validates the Compose file.
+
+## 2026-04-25
+
+### Fix Docker Compose Test Runner
+
+- Issue/task: Docker test runner needed fixes after inspection found a missing lockfile requirement, hidden virtualenv risk, no default site server, and Terraform state in the Docker context.
+- Action taken: Updated the Dockerfile to copy only `pyproject.toml` and place uv's project environment under `/opt/venv`, changed Compose to serve `src/` on port `8000`, and excluded OpenTofu state/vars from `.dockerignore`.
+- Files changed: `Dockerfile`, `docker-compose.yml`, `.dockerignore`, `docs/action_log.md`
+- Status: Completed; `docker compose config` validates the Compose file.

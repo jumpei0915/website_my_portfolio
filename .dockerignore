@@ -48,6 +48,11 @@ tmp/
 # Credentials (safety)
 # -----------------------------
 *.json
+infra/opentofu/terraform.tfvars
+infra/opentofu/terraform.tfstate
+infra/opentofu/terraform.tfstate.backup
+infra/opentofu/*.tfstate
+infra/opentofu/*.tfstate.*
 
 # -----------------------------
 # OS junk
