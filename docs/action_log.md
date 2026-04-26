@@ -1,3 +1,19 @@
+## 2026-04-26
+
+### Align Header Contact Icons
+
+- Issue/task: Make the header contact icons visually consistent after the self-made X icon looked weak.
+- Action taken: Replaced the X, Email, and LinkedIn inline SVGs with filled icon shapes and updated the shared icon CSS to render filled icons.
+- Files changed: `src/header.js`, `src/style.css`, `docs/action_log.md`
+- Status: Completed; targeted source checks confirm the filled SVG/CSS rules are in place.
+
+### Reduce Homepage Intro Heading Size
+
+- Issue/task: Make the homepage intro heading text slightly smaller.
+- Action taken: Added a homepage-specific `.hero-split h1` font-size rule so the intro heading shrinks without changing page-level headings elsewhere.
+- Files changed: `src/style.css`, `docs/action_log.md`
+- Status: Completed; targeted CSS check confirms the new heading rule is in place.
+
 ## 2026-04-24
 
 ### Standardize Contact Email

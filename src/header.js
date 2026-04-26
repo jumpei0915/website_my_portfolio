@@ -21,24 +21,17 @@ const contactLinks = {
 };
 const xIcon = `
   <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M5 4.5l14 15"></path>
-    <path d="M18.6 4.5 13 10.9"></path>
-    <path d="M11 13.1 5.4 19.5"></path>
+    <path d="M18.9 2h3.7l-8.1 9.3L24 22h-7.4l-5.8-7.6L4.2 22H.5l8.7-10L0 2h7.6l5.2 6.9L18.9 2Zm-1.3 18.1h2L6.5 3.8H4.4l13.2 16.3Z"></path>
   </svg>
 `;
 const emailIcon = `
   <svg viewBox="0 0 24 24" aria-hidden="true">
-    <rect x="3.5" y="6.5" width="17" height="11" rx="2"></rect>
-    <path d="M4.5 8l7.5 5.5L19.5 8"></path>
+    <path d="M3 6.7c0-.9.7-1.7 1.7-1.7h14.6c.9 0 1.7.7 1.7 1.7v.4L12 13 3 7.1v-.4Zm0 2.6 8.5 5.5c.3.2.7.2 1 0L21 9.3v8c0 .9-.7 1.7-1.7 1.7H4.7c-.9 0-1.7-.7-1.7-1.7v-8Z"></path>
   </svg>
 `;
 const linkedinIcon = `
   <svg viewBox="0 0 24 24" aria-hidden="true">
-    <rect x="4" y="4" width="16" height="16" rx="3"></rect>
-    <circle cx="8.8" cy="9" r="0.9" fill="currentColor" stroke="none"></circle>
-    <path d="M8.8 11.8v4.2"></path>
-    <path d="M12.5 16v-4.2"></path>
-    <path d="M12.5 13.2c.6-.9 1.5-1.4 2.5-1.4 1.7 0 2.5 1.2 2.5 3v4.2"></path>
+    <path d="M19.7 3H4.3C3.6 3 3 3.6 3 4.3v15.4c0 .7.6 1.3 1.3 1.3h15.4c.7 0 1.3-.6 1.3-1.3V4.3c0-.7-.6-1.3-1.3-1.3ZM8.3 18.1H5.7V9.8h2.6v8.3ZM7 8.7c-.8 0-1.5-.7-1.5-1.5S6.2 5.7 7 5.7s1.5.7 1.5 1.5S7.8 8.7 7 8.7Zm11.1 9.4h-2.6V14c0-1-.4-1.7-1.3-1.7-.7 0-1.1.5-1.3.9-.1.2-.1.4-.1.6v4.3h-2.6V9.8h2.6v1.1c.3-.5 1-1.3 2.4-1.3 1.8 0 3 1.2 3 3.6v4.9h-.1Z"></path>
   </svg>
 `;
 const socialLinks = `
