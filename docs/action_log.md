@@ -1,5 +1,124 @@
 ## 2026-04-26
 
+### Link Homepage Project Cards To Detail Sections
+
+- Issue/task: Each analytics project card on the homepage should link to its matching section on the analytics projects page.
+- Action taken: Converted homepage carousel cards into links, added matching project section IDs/content on English and Japanese project pages, and added a small hover/focus style for linked cards.
+- Files changed: `src/index.html`, `src/index-jp.html`, `src/projects.html`, `src/projects-jp.html`, `src/style.css`, `docs/action_log.md`
+- Status: Completed locally; targeted checks confirm each homepage card href has a matching destination ID.
+
+### Add Project Images To Homepages
+
+- Issue/task: Show the updated project images on the top page.
+- Action taken: Replaced homepage project-card portrait placeholders with the new project images, aligned the visible card titles/copy with the current analytics projects, updated square image framing, and kept Japanese project links pointed at the projects page without stale anchors.
+- Files changed: `src/index.html`, `src/index-jp.html`, `src/style.css`, `docs/action_log.md`
+- Status: Completed locally; project detail pages still need separate content alignment.
+
+### Revise Relocation Optimization Model
+
+- Issue/task: Project 5 should use job-title embeddings for role distance and ideal-path optimization, not career path clustering.
+- Action taken: Rewrote the problem, model, impact, and page copy to focus on distance between employees and roles, distance to the ideal future position, and minimizing the path to that ideal role.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Add Relocation Optimization AI Project
+
+- Issue/task: Add a fifth analytics project for a WIP relocation optimization AI concept.
+- Action taken: Added `Project 5: Relocation Optimization AI` with WIP status and content based on career path clustering, job embeddings, and Markov-based sequence patterns from the provided abstract.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Add Security Review AI Agent Project
+
+- Issue/task: Add a fourth analytics project for an AI agent that responds to security review requests.
+- Action taken: Added `Project 4: Security Review AI Agent` with problem, model, impact, and page copy, including the corrected 60% correct answer ratio.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Generalize Driver Analysis Project
+
+- Issue/task: Project 3 should describe a general driver analysis framework rather than attrition-only analysis.
+- Action taken: Renamed Project 3 to `Driver Analysis Framework` and rewrote its problem, model, impact, and page copy around categorical HR data, ad hoc client requests, configurable target variables, and tailored cleansing.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Polish Analytics Project Impact Lines
+
+- Issue/task: Improve the wording of analytics project `Impact` lines without making them longer.
+- Action taken: Rewrote the impact statements for the current analytics projects to be shorter and more polished.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Update Labor Cost Simulation Model
+
+- Issue/task: Clarify the Labor Cost Simulation Framework model approach.
+- Action taken: Updated Project 2 to describe an EBM-based labor cost simulation model using simulated headcount, and aligned the page copy with that approach.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Simplify Analytics Project Model Fields
+
+- Issue/task: Reduce overlap between `Model` and `Page Copy` in the analytics projects source doc.
+- Action taken: Shortened the Headcount Simulation Framework and Labor Cost Simulation Framework `Model` fields while keeping fuller explanations in `Page Copy`.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Add Labor Cost Simulation Project
+
+- Issue/task: Split labor cost simulation into its own analytics project and remove labor cost wording from the Headcount Simulation Framework.
+- Action taken: Added `Project 2: Labor Cost Simulation Framework`, renumbered Attrition Driver Analysis to Project 3, and revised the Headcount impact/page copy to focus on workforce size forecasting.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Specify Headcount Simulation Model
+
+- Issue/task: Add more accurate model details to the Headcount Simulation Framework documentation.
+- Action taken: Updated the model and page copy to describe a Markov-chain-based workforce simulation model, join/resignation/internal transition events, more than five employee attributes, and 10,000+ employee scale.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Rename Analytics Project Built Field
+
+- Issue/task: Rename the analytics project documentation field from `Built` to `Model`.
+- Action taken: Updated the remaining `### Built` headings in `docs/analytics_projects.md` to `### Model`.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Polish Headcount Project Problem
+
+- Issue/task: Make the revised Headcount Simulation Framework problem statement more professional.
+- Action taken: Rewrote the sentence to describe slow forecasting processes, weak probability assumptions, and difficulty accounting for uncertainty in workforce planning.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Update Headcount Project Problem
+
+- Issue/task: Revise the Headcount Simulation Framework problem statement in the analytics projects source doc.
+- Action taken: Replaced the previous HR leader forecasting sentence with the new wording about slow work, unstable/invalid probability foundation, and uncertainty.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Simplify Analytics Projects Content Doc
+
+- Issue/task: Remove unwanted fields from the analytics project documentation.
+- Action taken: Removed the `Tech` and `Assets And Links` sections from each project entry in `docs/analytics_projects.md`.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed.
+
+### Create Analytics Projects Content Doc
+
+- Issue/task: Create a dedicated analytics project documentation file based on the current project content in `docs/actual_content.md`.
+- Action taken: Added `docs/analytics_projects.md` with structured sections for each current analytics project, including problem, built, tech, impact, page copy, and asset/link placeholders.
+- Files changed: `docs/analytics_projects.md`, `docs/action_log.md`
+- Status: Completed; future content edits can start from the new analytics projects source doc.
+
+### Rename Homepage Project Heading
+
+- Issue/task: Rename the homepage project section heading from `Featured Projects` to `Analytics Projects`.
+- Action taken: Updated the homepage section heading text.
+- Files changed: `src/index.html`, `docs/action_log.md`
+- Status: Completed locally; commit and deploy are needed for production.
+
 ### Normalize Homepage Index URL
 
 - Issue/task: The deployed homepage still showed `/index.html` in the browser address bar after the visual updates were reflected.

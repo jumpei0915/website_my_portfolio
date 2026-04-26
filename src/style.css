@@ -341,14 +341,25 @@ h3 {
 }
 
 .carousel-card {
+  display: block;
   overflow: hidden;
   scroll-snap-align: start;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.carousel-card:hover,
+.carousel-card:focus-visible {
+  border-color: rgba(20, 92, 83, 0.34);
+  transform: translateY(-2px);
+  outline: none;
 }
 
 .carousel-card-media img {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
