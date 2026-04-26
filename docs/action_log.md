@@ -1,5 +1,12 @@
 ## 2026-04-26
 
+### Normalize Homepage Index URL
+
+- Issue/task: The deployed homepage still showed `/index.html` in the browser address bar after the visual updates were reflected.
+- Action taken: Added a small shared script rule that replaces `/index.html` with `/` in browser history without reloading, and versioned `script.js` references so the new behavior is fetched.
+- Files changed: `src/script.js`, `src/index.html`, `src/index-jp.html`, `src/projects.html`, `src/projects-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed locally; commit and deploy are needed before production reflects this URL normalization.
+
 ### Fix Static Asset Cache And Home URL
 
 - Issue/task: Recent icon and heading-size changes did not appear on the deployed site, and clicking home changed the URL to `/index.html`.
