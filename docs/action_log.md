@@ -288,6 +288,20 @@
 - Status: Completed; `docker compose config` validates the Compose file.
 ## 2026-04-26
 
+### Remove Homepage Hero Buttons
+
+- Issue/task: Remove the Contact, Projects, and Resume buttons from the homepage hero.
+- Action taken: Deleted the hero `.button-row button-row-left` block from `src/index.html`.
+- Files changed: `src/index.html`, `docs/action_log.md`
+- Status: Completed; targeted search confirms the removed button row and links are no longer in `src/index.html`.
+
+### Remove Selected Work Eyebrow
+
+- Issue/task: Remove the `Selected Work` eyebrow text from the homepage project section.
+- Action taken: Deleted the single eyebrow paragraph above the `Featured Projects` heading.
+- Files changed: `src/index.html`, `docs/action_log.md`
+- Status: Completed; targeted search confirms the exact paragraph is no longer in `src/index.html`.
+
 ### Widen Homepage Main Container
 
 - Issue/task: Reduce excess side whitespace on the homepage hero.
@@ -308,3 +322,10 @@
 - Action taken: Deleted the single eyebrow paragraph before the homepage heading.
 - Files changed: `src/index.html`, `docs/action_log.md`
 - Status: Completed; targeted search confirms the exact paragraph is no longer in `src/index.html`.
+
+### Remove Featured Project Detail Links
+
+- Issue/task: Keep featured project summaries on the homepage without linking to unfinished detail sections.
+- Action taken: Removed the four `Learn More` links from the homepage featured project cards.
+- Files changed: `src/index.html`, `docs/action_log.md`
+- Status: Completed; targeted search confirms no `Learn More` or `projects.html#` links remain in `src/index.html`.
