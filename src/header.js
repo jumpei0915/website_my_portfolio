@@ -4,7 +4,7 @@ const page = document.body.dataset.page;
 const lang = document.body.dataset.lang;
 const routes = {
   en: {
-    home: "./index.html",
+    home: "./",
     projects: "./projects.html",
     resume: "./resume.html",
   },

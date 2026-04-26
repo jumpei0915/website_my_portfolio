@@ -1,5 +1,12 @@
 ## 2026-04-26
 
+### Fix Static Asset Cache And Home URL
+
+- Issue/task: Recent icon and heading-size changes did not appear on the deployed site, and clicking home changed the URL to `/index.html`.
+- Action taken: Added query-string versions to `style.css` and `header.js` references across HTML pages to force fresh static assets, and changed the English home route from `./index.html` to `./`.
+- Files changed: `src/header.js`, `src/index.html`, `src/index-jp.html`, `src/projects.html`, `src/projects-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed locally; commit and deploy are needed before production reflects this cache-busting update.
+
 ### Align Header Contact Icons
 
 - Issue/task: Make the header contact icons visually consistent after the self-made X icon looked weak.
