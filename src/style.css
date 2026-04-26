@@ -180,15 +180,16 @@ a {
 
 .home-main,
 .page-main {
-  width: min(980px, calc(100% - 2rem));
   margin: 0 auto;
 }
 
 .home-main {
+  width: min(1120px, calc(100% - 2rem));
   padding: 3.4rem 0 4rem;
 }
 
 .page-main {
+  width: min(980px, calc(100% - 2rem));
   padding: 3rem 0 4rem;
 }
 

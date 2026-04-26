@@ -286,3 +286,25 @@
 - Action taken: Updated the Dockerfile to copy only `pyproject.toml` and place uv's project environment under `/opt/venv`, changed Compose to serve `src/` on port `8000`, and excluded OpenTofu state/vars from `.dockerignore`.
 - Files changed: `Dockerfile`, `docker-compose.yml`, `.dockerignore`, `docs/action_log.md`
 - Status: Completed; `docker compose config` validates the Compose file.
+## 2026-04-26
+
+### Widen Homepage Main Container
+
+- Issue/task: Reduce excess side whitespace on the homepage hero.
+- Action taken: Changed `.home-main` from the shared `980px` cap to `1120px`, matching the header/footer width while keeping `.page-main` at `980px`.
+- Files changed: `src/style.css`, `docs/action_log.md`
+- Status: Completed; targeted CSS search confirms homepage and footer use `1120px`, page content remains `980px`.
+
+### Inspect Homepage Width Limit
+
+- Issue/task: Explain why the homepage hero width is limited and whether the side whitespace is expected.
+- Action taken: Inspected `src/index.html` and `src/style.css`; found `.home-main` capped at `980px`, while header/footer use `1120px`.
+- Files changed: `docs/action_log.md`
+- Status: Inspection completed; no homepage layout code changed.
+
+### Remove Homepage Portfolio Eyebrow
+
+- Issue/task: Remove the `Portfolio` eyebrow text from the homepage hero.
+- Action taken: Deleted the single eyebrow paragraph before the homepage heading.
+- Files changed: `src/index.html`, `docs/action_log.md`
+- Status: Completed; targeted search confirms the exact paragraph is no longer in `src/index.html`.
