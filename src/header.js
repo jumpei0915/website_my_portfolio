@@ -64,7 +64,7 @@ if (headerRoot && routes[lang] && routes.en[page] && routes.jp[page]) {
           <a href="${pageLinks.projects}"${projectsCurrent}>Analytics Project</a>
         </nav>
 
-        <a class="brand" href="${pageLinks.home}">Jumpei Kato</a>
+        <a class="brand" href="${pageLinks.home}">Jumpei Kato/加藤順平</a>
 
         <div class="header-links">
           <div class="lang-toggle" aria-label="Language switcher">
