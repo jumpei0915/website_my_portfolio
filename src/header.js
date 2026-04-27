@@ -4,14 +4,14 @@ const page = document.body.dataset.page;
 const lang = document.body.dataset.lang;
 const routes = {
   en: {
-    home: "./",
-    projects: "./projects.html",
-    resume: "./resume.html",
+    home: "/",
+    projects: "/projects",
+    resume: "/resume",
   },
   jp: {
-    home: "./index-jp.html",
-    projects: "./projects-jp.html",
-    resume: "./resume-jp.html",
+    home: "/jp",
+    projects: "/projects-jp",
+    resume: "/resume-jp",
   },
 };
 const contactLinks = {
