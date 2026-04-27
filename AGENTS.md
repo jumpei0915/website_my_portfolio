@@ -23,7 +23,7 @@
 - Do not install any packages even if it's requested. 
 - If package insallation is required, then share a uv command with non-latest/safer version so that I can easily C&P.
 
-# Codex Memory Instruction
+<!-- # Codex Memory Instruction
 After each meaningful project action, update `docs/action_log.md` with a short note.
 
 Keep the log simple and concise:
@@ -48,4 +48,4 @@ Prefer this format:
 - Action taken: ...
 - Files changed: ...
 - Status: ...
-```
+``` -->

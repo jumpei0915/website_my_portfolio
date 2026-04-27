@@ -1,3 +1,12 @@
+## 2026-04-27
+
+### Add Site Favicon
+
+- Issue/task: Add a favicon to the portfolio site.
+- Action taken: Added a lightweight SVG favicon with `JK` initials and referenced it from all English and Japanese HTML pages.
+- Files changed: `src/assets/favicon.svg`, `src/index.html`, `src/index-jp.html`, `src/projects.html`, `src/projects-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed locally; targeted source checks confirm all pages reference the favicon.
+
 ## 2026-04-26
 
 ### Link Homepage Project Cards To Detail Sections
