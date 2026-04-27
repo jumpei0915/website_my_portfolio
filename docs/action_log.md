@@ -487,3 +487,12 @@
 - Action taken: Removed the four `Learn More` links from the homepage featured project cards.
 - Files changed: `src/index.html`, `docs/action_log.md`
 - Status: Completed; targeted search confirms no `Learn More` or `projects.html#` links remain in `src/index.html`.
+
+## 2026-04-27
+
+### Align Japanese Homepage Copy
+
+- Issue/task: Fix the Japanese homepage name spelling and align its content with the current English homepage.
+- Action taken: Updated `src/index-jp.html` to use `加藤順平`, removed old hero/section content that no longer exists in `src/index.html`, and retranslated the current homepage copy.
+- Files changed: `src/index-jp.html`, `docs/action_log.md`
+- Status: Completed; targeted search confirms old Japanese hero content and `純平` are gone.
