@@ -28,10 +28,20 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Build clean URLs
+        run: |
+          cp -R src _site
+          mkdir -p _site/jp _site/projects _site/projects-jp _site/resume _site/resume-jp
+          cp src/index-jp.html _site/jp/index.html
+          cp src/projects.html _site/projects/index.html
+          cp src/projects-jp.html _site/projects-jp/index.html
+          cp src/resume.html _site/resume/index.html
+          cp src/resume-jp.html _site/resume-jp/index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: src
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

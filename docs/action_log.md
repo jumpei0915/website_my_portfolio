@@ -490,6 +490,13 @@
 
 ## 2026-04-27
 
+### Add Clean Page URLs
+
+- Issue/task: Stop public page URLs from showing `.html`, such as `/resume.html`.
+- Action taken: Changed remaining page asset links to root-relative paths, added clean URL generation to the GitHub Pages workflow, and updated Docker Compose preview to serve the generated clean URL layout.
+- Files changed: `.github/workflows/deploy-pages.yml`, `docker-compose.yml`, `src/projects.html`, `src/projects-jp.html`, `src/resume.html`, `src/resume-jp.html`, `docs/action_log.md`
+- Status: Completed locally; static checks confirm no internal page links point to `.html`, and generated clean URL index files are created.
+
 ### Align Japanese Homepage Copy
 
 - Issue/task: Fix the Japanese homepage name spelling and align its content with the current English homepage.

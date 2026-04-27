@@ -10,4 +10,13 @@ services:
       - "8000:8000"
     stdin_open: true
     tty: true
-    command: python -m http.server 8000 --directory src
+    command: >
+      sh -c "rm -rf /tmp/portfolio-site &&
+      cp -R src /tmp/portfolio-site &&
+      mkdir -p /tmp/portfolio-site/jp /tmp/portfolio-site/projects /tmp/portfolio-site/projects-jp /tmp/portfolio-site/resume /tmp/portfolio-site/resume-jp &&
+      cp src/index-jp.html /tmp/portfolio-site/jp/index.html &&
+      cp src/projects.html /tmp/portfolio-site/projects/index.html &&
+      cp src/projects-jp.html /tmp/portfolio-site/projects-jp/index.html &&
+      cp src/resume.html /tmp/portfolio-site/resume/index.html &&
+      cp src/resume-jp.html /tmp/portfolio-site/resume-jp/index.html &&
+      python -m http.server 8000 --directory /tmp/portfolio-site"
